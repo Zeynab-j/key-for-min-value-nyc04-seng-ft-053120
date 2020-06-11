@@ -5,7 +5,7 @@ def key_for_min_value(name_hash)
   if name_hash == {}
          return nil
     else
-     name_hash= name_hash.select {|k , v| v}
+     name_hash= name_hash.first{|k , v| v}
      name_hash[0][0]
      end
   end
