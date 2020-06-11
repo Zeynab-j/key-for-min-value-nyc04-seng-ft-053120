@@ -4,13 +4,7 @@
 def key_for_min_value(name_hash)
   if name_hash == {}
          return nil
-    else
-      hash.each do |k, v|
-        if v < lowest_value
-          lowest_value = v
-          lowest_key = k
-     end
-     lowest_key
-  end
-end
-end 
+      else 
+         name_hash= name_hash.map {|k , v| v}
+         name_hash[0][0]
+  end 
